@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cuerpo{
+    display: flex;
+    flex-direction: column;
+    
+    height: 100%;
+    width: 1120px;
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    background-color: #fa8272;
+    height: 100px;
+    width: 100%;
+    color: white;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+    .tittle{
+        font-size: 25px;
+    }
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    background-color: #17bda0;
+    height: 30px;
+    width: 100%;
+    gap: 10px;
+    color: white;
+    align-items: center;
+}
+
+.contenido{
+    display: flex;
+    flex-direction: row;
+    background-color: antiquewhite;
+    height:100%;
+}
+    .iz{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 450px;
+        padding: 10px;
+        gap: 10px;
+    }
+    .der{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 500px;
+    }
+        .uno{
+            background-color: #cccccc;
+            height: 400px;
+            width: 400px;
+            
+        }
+        .dos{
+            background-color: #cccccc;
+            height: 200px;
+            width: 400px;
+
+        }
+        .tres{
+            background-color: #cccccc;
+            height: 200px;
+            width: 400px;
+
+        }
+        .cuatro{
+            background-color: #cccccc;
+            height: 200px;
+            width: 400px;
+
+        }
+
+    .der{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        padding: 10px;
+        gap: 10px;
+    }
+        .cinco{
+            background-color: #cccccc;
+            height: 200px;
+            width: 668px;
+
+        }
+            .linea{
+                border: 1px solid black;
+            }
+
+        .seis{
+            background-color: #cccccc;
+            height: 200px;
+            width: 668px;
+
+        }
+
+.pie{
+    display: flex;
+    background-color: #dddddd;
+    height: 80px;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
