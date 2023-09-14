@@ -1,0 +1,17 @@
+.contenedor{
+    background-color: cadetblue;
+    width: 700px;
+}
+
+       .cuadro {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 4px solid yellow;
+            background-color: rgb(132, 130, 130);
+        }
+        
+      

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+
+<html>
+  <head>
+    <title>Lab2</title>
+    <link rel="stylesheet" href="php.css" />
+  </head>
+  <body>
+    <div class="contenedor">
+      <h3>Lab2 conversor</h3>
+      <form action="lab2.php" method="post">
+        <label for="cantidad">Cantidad:</label>
+        <input type="number" name="cantidad" id="cantidad" />
+        <br />
+
+        <label for="unidad_entrada">Unidad de Medida:</label>
+        <select name="unidad_entrada" id="unidad_entrada">
+          <option value="milimetro">Milimetro</option>
+          <option value="centimetro">Centimetro</option>
+          <option value="decimetro">Decimetro</option>
+          <option value="metro">Metro</option>
+          <option value="kilometro">Kilometro</option>
+        </select>
+        <br />
+
+        <label for="unidad_destino">Unidad de Destino:</label>
+        <select name="unidad_destino" id="unidad_destino">
+          <option value="milimetro">Milimetro</option>
+          <option value="centimetro">Centimetro</option>
+          <option value="decimetro">Decimetro</option>
+          <option value="metro">Metro</option>
+          <option value="kilometro">Kilometro</option>
+        </select>
+        <br />
+
+        <input type="submit" value="enviar" />
+      </form>
+    </div>
+  </body>
+</html>
