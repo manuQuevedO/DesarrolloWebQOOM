@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio4</title>
+  </head>
+  <body>
+    <script>
+      function esPalindromo(cadena) {
+        // Eliminamos espacios y convertimos la cadena a minúsculas para hacer la comparación
+        cadena = cadena.toLowerCase().replace(/ /g, "");
+
+        // Invertimos la cadena
+        var cadenaInvertida = cadena.split("").reverse().join("");
+
+        // Comparamos la cadena original con la invertida
+        return cadena === cadenaInvertida;
+      }
+
+      // Ejemplo de uso
+      var texto = "La ruta nos aporto otro paso natural";
+      if (esPalindromo(texto)) {
+        console.log("La cadena es un palíndromo.");
+      } else {
+        console.log("La cadena no es un palíndromo.");
+      }
+    </script>
+  </body>
+</html>

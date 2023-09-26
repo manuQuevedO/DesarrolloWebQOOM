@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio2</title>
+  </head>
+  <body>
+    <script>
+      var n = prompt("Introduzca un número");
+      n = parseInt(n);
+
+      function factorial(n) {
+        var auxi = 1;
+        for (var i = 1; i <= n; i++) {
+          auxi = auxi * i;
+        }
+        return auxi;
+      }
+
+      var resultado = factorial(n);
+
+      document.write("El factorial de " + n + " es: " + resultado);
+    </script>
+  </body>
+</html>

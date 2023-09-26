@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio1</title>
+  </head>
+  <body>
+    <script>
+      var numero1 = parseInt(prompt("Ingrese el primer número:"));
+      var numero2 = parseInt(prompt("Ingrese el segundo número:"));
+      var numero3 = parseInt(prompt("Ingrese el tercer número:"));
+
+      var mayor, menor;
+
+      if (numero1 >= numero2 && numero1 >= numero3) {
+        mayor = numero1;
+      } else if (numero2 >= numero1 && numero2 >= numero3) {
+        mayor = numero2;
+      } else {
+        mayor = numero3;
+      }
+
+      if (numero1 <= numero2 && numero1 <= numero3) {
+        menor = numero1;
+      } else if (numero2 <= numero1 && numero2 <= numero3) {
+        menor = numero2;
+      } else {
+        menor = numero3;
+      }
+
+      document.write("El mayor número es: " + mayor);
+      document.write("<br>");
+      document.write("El menor número es: " + menor);
+    </script>
+  </body>
+</html>

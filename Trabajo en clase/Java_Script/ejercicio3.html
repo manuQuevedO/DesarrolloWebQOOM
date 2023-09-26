@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ejercicio3</title>
+  </head>
+  <body>
+    <label for="numeroInput">Ingrese un número entero:</label>
+    <input
+      type="number"
+      ,
+      id="numeroInput"
+      ,
+      placeholder="Ingrese un número entero"
+    />
+    <button onclick="ParOimpar()">Determinar</button>
+
+    <p id="resultado"></p>
+
+    <script>
+      function ParOimpar() {
+        var numeroInput = document.getElementById("numeroInput");
+        var resultado = document.getElementById("resultado");
+
+        var numero = parseInt(numeroInput.value);
+
+        if (isNaN(numero) || !Number.isInteger(numero)) {
+          resultado.textContent = "Por favor, ingrese un número entero válido.";
+        } else {
+          if (numero % 2 === 0) {
+            resultado.textContent = "El número es par";
+          } else {
+            resultado.textContent = "El número es impar";
+          }
+        }
+      }
+    </script>
+  </body>
+</html>
