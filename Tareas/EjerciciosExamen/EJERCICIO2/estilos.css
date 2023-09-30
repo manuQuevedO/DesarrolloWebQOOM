@@ -1,0 +1,96 @@
+body {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    /*align-items: center; /* Centra verticalmente */ /* Altura del 100% del viewport (ventana del navegador) */
+    margin: 0;
+    /*background-color: #00b7ff; /* Color de fondo del cuerpo */
+}
+.contenido {
+    width: 900px;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+    border: 1px solid black;
+}
+.arriba{
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: #c0cce4;
+    height: 200px;
+    text-align: center;
+    align-items: center;
+}
+#titulo {
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    text-align: center;
+  }
+.logo{
+
+    margin-left: 100px;
+    margin-right: -50px;
+}
+#logo{
+    height: 100px;
+}
+.rojo {
+    color: red;
+  }
+  .azul{
+    color: blue;
+  }
+  .amarillo{
+    color: yellow;
+  }
+  .verde{
+    color: green;
+  }
+.abajo{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 900px;
+}
+.izq{
+    width: 120px;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    border: 1px solid black;
+    justify-content: center;
+}
+.medio{
+    height: 50 px;
+    background-color: #484444;
+    border: 1px solid black;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.eje1, .eje2, .eje3, .eje4{
+    width: 100px;
+    border: 1px solid black;
+    background-color: white;
+    text-align: center;
+    display: inline-block;
+    margin-right: 10px; /* Add spacing between the elements if needed */
+}
+
+.der{
+background-color: #d9d9d9;
+width: 900px;
+}
+.nomb{
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+.ejel{
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+.li{
+    margin-left: 20px;
+}
