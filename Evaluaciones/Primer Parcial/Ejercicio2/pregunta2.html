@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Calendario</title>
+    <style>
+      form {
+        display: flex;
+        flex-direction: column;
+        border: 3px solid #f79646;
+        padding: 10px;
+      }
+      .sel {
+        display: flex;
+        flex-direction: row;
+      }
+      .iz {
+        width: 50%;
+      }
+      .dere {
+        width: 50%;
+      }
+      select,
+      input[type="number"] {
+        border: 3px solid #f79646;
+      }
+      table {
+        width: 100%;
+        height: 150px;
+      }
+      td {
+        text-align: center;
+      }
+      .enviar{
+        display: flex;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="calendario.php" method="post">
+      <div class="sel">
+        <div class="iz">
+          <label for="mes">Mes:</label>
+          <select id="mes" name="mes">
+            <option value="enero">Enero</option>
+            <option value="febrero">Febrero</option>
+            <option value="marzo">Marzo</option>
+            <option value="abril">Abril</option>
+            <option value="mayo">Mayo</option>
+            <option value="junio">Junio</option>
+            <option value="julio">Julio</option>
+            <option value="agosto">Agosto</option>
+            <option value="septiembre">Septiembre</option>
+            <option value="octubre">Octubre</option>
+            <option value="noviembre">Noviembre</option>
+            <option value="diciembre">Diciembre</option>
+          </select>
+        </div>
+        <br /><br />
+        <div class="dere">
+            <label for="ano">Año:</label>
+            <input type="number" id="ano" name="ano" min="1900" max="2100" />
+        </div class="dere">
+      </div>
+      <br /><br />
+      <div class="enviar">
+        <input type="submit" style="background-color: #f79646;" value="Enviar" />
+      </div>
+    </form>
+  </body>
+</html>

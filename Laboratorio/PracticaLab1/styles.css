@@ -63,7 +63,7 @@
 #titulo{
     display: flex;
     flex-direction: column;
-    width: 700px;
+    width: 500px;
     text-align: center;
 
 }
@@ -72,6 +72,7 @@
 .encabezado{
     display: flex;
     flex-wrap: nowrap;
+    height: 300px;
 }
 
 .contenido{

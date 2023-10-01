@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es"></html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio4</title>
+  </head>
+  <body>
+    <h1>Calculadora</h1>
+    <form action="menu.php" method="GET">
+      <label for="numero1">Numero 1:</label>
+      <input type="number" name="a" id="a" /><br /><br />
+
+      <label for="numero2">Numero 2:</label>
+      <input type="number" name="b" id="b" /><br /><br />
+
+      <label for="operacion">Operacion:</label>
+      <select name="operacion" id="operacion">
+        <option value="sumar">Sumar</option>
+        <option value="restar">Restar</option>
+        <option value="multiplicar">Multiplicar</option>
+        <option value="dividir">Dividir</option></select
+      ><br /><br />
+
+      <input type="submit" value="Calcular" />
+    </form>
+  </body>
+</html>
