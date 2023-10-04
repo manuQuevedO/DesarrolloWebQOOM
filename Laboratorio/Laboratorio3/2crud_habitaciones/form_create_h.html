@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crear</title>
+  </head>
+  <body>
+    <form action="create_h.php" method="POST">
+      <div>
+        <label for="id_tipo_habitacion">Id Tipo:</label>
+        <input type="text" name="id_tipo_habitacion" />
+      </div>
+      <div>
+        <label for="bano_privado">Bano Privado (1=si, 0=no):</label>
+        <input type="number" name="bano_privado" min="0" max="1" />
+      </div>
+      <div>
+        <label for="espacio">Espacio:</label>
+        <input type="text" name="espacio" />
+      </div>
+      <div>
+        <label for="precio">Precio:</label>
+        <input type="number" name="precio" />
+      </div>
+
+      <input type="submit" value="Crear" style="background-color: burlywood" />
+    </form>
+  </body>
+</html>
