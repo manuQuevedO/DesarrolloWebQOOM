@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tittle</title>
+  </head>
+
+  <body>
+    <label for="a">Numero de inputs</label> <br />
+    <input type="number" id="n" />
+    <button id="llenar" onclick="llenar()">Llenar</button>
+    <div id="elementos"></div>
+  </body>
+  <script>
+    var html = "";
+    document.getElementById("elementos").innerHTML = html;
+    function llenar() {
+      var elementos = document.getElementById("elementos");
+      let n = parseInt(document.getElementById("n").value);
+      for (let i = 0; i < n; i++) {
+        html += `
+        <label for="name">Elemento ${i} </label> <br>
+        <input type="number" name="numero"> <span name="texto"></span> <br>
+        `;
+      }
+      html += `
+        <button id="calcular" onclick="calcularMayor()"> Calcular Mayor </button><br>
+        `;
+      elementos.innerHTML = html;
+    }
+
+    function calcularMayor() {
+      let arrayInputs = document.getElementsByName("numero");
+      let arraySpan = document.getElementsByName("texto");
+      let texto = arraySpan[0];
+      let mayor = arrayInputs[0];
+      arrayInputs.forEach(function (inputs) {
+        inputs.style.background = "";
+      });
+      arraySpan.forEach(function (spans) {
+        spans.innerText = "";
+      });
+      for (let i = 1; i < arrayInputs.length; i++) {
+        a = parseInt(mayor.value);
+        b = parseInt(arrayInputs[i].value);
+        if (b > a) {
+          mayor = arrayInputs[i];
+          texto = arraySpan[i];
+        }
+      }
+      mayor.style.background = "yellow";
+      texto.innerText = "--> Este es el número mayor";
+    }
+  </script>
+</html>

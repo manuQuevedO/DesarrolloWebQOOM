@@ -1,0 +1,48 @@
+<!-- FILEPATH: /c:/xampp/htdocs/DesarrolloWeb/DesarrolloWebQOOM/Tareas/Tareas-en-Clase/SumaJS/formu.html -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calcular Mayor de Tres Números</title>
+  </head>
+  <body>
+    <h1>Calcular Mayor</h1>
+    <label for="a">Valor de A:</label>
+    <input type="number" id="a" /><br /><br />
+    <label for="b">Valor de B:</label>
+    <input type="number" id="b" /><br /><br />
+    <label for="c">Valor de C:</label>
+    <input type="number" id="c" /><br /><br />
+    <button onclick="calcularMayor()">Calcular Mayor</button>
+
+    <script>
+      function calcularMayor() {
+        document.getElementById("a").style.backgroundColor = "";
+        document.getElementById("b").style.backgroundColor = "";
+        document.getElementById("c").style.backgroundColor = "";
+
+        var a = parseInt(document.getElementById("a").value);
+        var b = parseInt(document.getElementById("b").value);
+        var c = parseInt(document.getElementById("c").value);
+
+        var Nmayor = a;
+        if (b > Nmayor) {
+          Nmayor = b;
+        }
+        if (c > Nmayor) {
+          Nmayor = c;
+        }
+
+        if (Nmayor == a) {
+          document.getElementById("a").style.backgroundColor = "red";
+        } else if (Nmayor == b) {
+          document.getElementById("b").style.backgroundColor = "red";
+        } else {
+          document.getElementById("c").style.backgroundColor = "red";
+        }
+      }
+
+      //document.getElementById("b", ("c".style.backgroundColor = "white"));
+    </script>
+  </body>
+</html>
