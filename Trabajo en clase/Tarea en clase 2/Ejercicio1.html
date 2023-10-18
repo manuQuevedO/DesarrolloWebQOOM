@@ -48,7 +48,7 @@
         <td onclick="teclaPresionada('9')">9</td>
       </tr>
       <tr>
-        <td onclick="borrarUltimoCaracter()">*</td>
+        <td onclick="borrarUltimo()">*</td>
         <td onclick="teclaPresionada('0')">0</td>
         <td onclick="borrar()">Borrar</td>
       </tr>
@@ -63,7 +63,7 @@
         document.getElementById("password").value = "";
       }
 
-      function borrarUltimoCaracter() {
+      function borrarUltimo() {
         var input = document.getElementById("password");
         var valor = input.value;
         input.value = valor.substring(0, valor.length - 1);
