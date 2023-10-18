@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Teclado Virtual</title>
+    <style>
+      table {
+        border-collapse: collapse;
+      }
+      td {
+        padding: 10px;
+        width: 30px;
+        border: 1px solid black;
+
+        text-align: center;
+        cursor: pointer;
+      }
+      input {
+        display: block;
+        margin: 10px 0;
+        padding: 5px;
+        font-size: 18px;
+        width: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <label for="Password">Password</label>
+    <input type="password" id="password" />
+    <button id="boton" onclick="mostrar()">Mostrar</button>
+
+    <br />
+    <br />
+
+    <table>
+      <tr>
+        <td onclick="teclaPresionada('1')">1</td>
+        <td onclick="teclaPresionada('2')">2</td>
+        <td onclick="teclaPresionada('3')">3</td>
+      </tr>
+      <tr>
+        <td onclick="teclaPresionada('4')">4</td>
+        <td onclick="teclaPresionada('5')">5</td>
+        <td onclick="teclaPresionada('6')">6</td>
+      </tr>
+      <tr>
+        <td onclick="teclaPresionada('7')">7</td>
+        <td onclick="teclaPresionada('8')">8</td>
+        <td onclick="teclaPresionada('9')">9</td>
+      </tr>
+      <tr>
+        <td onclick="borrarUltimoCaracter()">*</td>
+        <td onclick="teclaPresionada('0')">0</td>
+        <td onclick="borrar()">Borrar</td>
+      </tr>
+    </table>
+
+    <script>
+      function teclaPresionada(valor) {
+        document.getElementById("password").value += valor;
+      }
+
+      function borrar() {
+        document.getElementById("password").value = "";
+      }
+
+      function borrarUltimoCaracter() {
+        var input = document.getElementById("password");
+        var valor = input.value;
+        input.value = valor.substring(0, valor.length - 1);
+      }
+
+      function enviar() {
+        alert("Texto enviado: " + document.getElementById("password").value);
+      }
+
+      function mostrar() {
+        if (document.getElementById("password").type == "password") {
+          document.getElementById("password").type = "text";
+          document.getElementById("boton").innerHTML = "Ocultar";
+        } else {
+          document.getElementById("password").type = "password";
+          document.getElementById("boton").innerHTML = "Mostrar";
+        }
+      }
+    </script>
+  </body>
+</html>
