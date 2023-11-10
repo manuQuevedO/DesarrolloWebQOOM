@@ -1,0 +1,48 @@
+#container {
+    text-align: center;
+  }
+
+  #img-container {
+    display: inline-block;
+    
+  }
+
+  button {
+
+    padding: 12px 20px;
+    border: none;
+    border-style: double;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #cc8f0d;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  button:hover {
+    background-color: #a04545;
+  }
+
+  input[type="number"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+
+  .botones{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  imagen{
+    display: flex;
+    width: 30px;
+    height: 40px;
+  }

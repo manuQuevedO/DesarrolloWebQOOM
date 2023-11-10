@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lista de estudiantes</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <button id="mostrar">Mostrar</button>
+    <div id="lista"></div>
+    <div>
+      <th></th>
+    </div>
+    <script>
+      $(document).ready(function () {
+        $("#mostrar").click(function () {
+          $.getJSON("lista.php", function (data) {
+            var tabla =
+              "<table><tr><th>Nro</th><th>Nombres y Apellidos</th><th>Edad</th><th>Materia</th><th>Not</th></tr>";
+            $.each(data, function (key, value) {
+              "<div class='lista'>";
+              tabla +=
+                "<tr><td>" +
+                value.Nro +
+                "</td><td>" +
+                value.Nombres_Apellidos +
+                "</td><td>" +
+                value.Edad +
+                "</td><td>" +
+                value.Materia +
+                "</td><td>" +
+                value.Not +
+                "</td></tr>";
+              ("</div>");
+            });
+            tabla += "</table>";
+            $("#lista").html(tabla);
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

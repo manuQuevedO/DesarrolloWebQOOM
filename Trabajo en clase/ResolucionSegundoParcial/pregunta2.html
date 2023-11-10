@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="menu">
+      <ul>
+        <il>pregunta1</il>
+        <li><a href="javascript:ejer2()">pregunta 2</a></li>
+        <li><a href="javascript:ejer3()">pregunta ek3</a></li>
+        <li>pregunta4</li>
+      </ul>
+    </div>
+    <div id="contenido"></div>
+
+    <script>
+      function ejer2() {
+        let html = `
+          <label for="">Tablas</label>
+          <input type="number" id="filas" placeholder="Número de filas" />
+          <input type="number" id="columnas" placeholder="Número de columnas" />
+          <button onclick="dibujarTabla()">Dibujar</button> 
+        `;
+        document.getElementById("contenido").innerHTML = html;
+      }
+
+      function dibujarTabla() {
+        let filas = document.getElementById("filas").value;
+        let columnas = document.getElementById("columnas").value;
+        let html = `
+          <table border="1">
+            <thead>
+              <tr>
+                
+              </tr>
+            </thead>
+            <tbody>
+          `;
+        for (let i = 1; i <= filas; i++) {
+          html += "<tr>&nbsp";
+          for (let j = 1; j <= columnas; j++) {
+            html += `<td>&nbsp</td>`;
+          }
+          html += "&nbsp</tr>";
+        }
+        html += "</tbody></table>";
+        document.getElementById("contenido").innerHTML = html;
+      }
+
+      function ejer3() {}
+    </script>
+  </body>
+</html>

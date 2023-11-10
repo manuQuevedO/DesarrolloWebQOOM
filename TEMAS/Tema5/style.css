@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    
+}
+    .cuerpo{
+        display: flex;
+        flex-direction: row;
+        background-color: rgb(237, 247, 171);
+        border: 1px solid black;
+        margin: 10px;
+        
+        height: 600px;
+
+    }
+        .iz{
+            display: flex;
+            flex-direction: column;
+            background-color: skyblue;
+            width: 30%;
+            border: 1px solid black;
+            padding: 10px;
+            gap: 10px;
+            text-size-adjust: 100px;
+
+        }
+        #der{
+            display: flex;
+            flex-direction: column;
+            background-color: rgb(254, 212, 121);
+            width: 70%;
+            border: 1px solid black;
+            padding: 10px;
+
+        }

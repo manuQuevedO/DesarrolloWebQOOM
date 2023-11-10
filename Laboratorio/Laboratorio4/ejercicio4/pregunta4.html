@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Pregunta 4</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <button id="logboton">Login</button>
+    <div id="resultDiv"></div>
+
+    <script>
+      document.getElementById("logboton").addEventListener("click", () => {
+        fetch("login.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document.getElementById("resultDiv").innerHTML = data;
+
+            document.getElementById("submit").addEventListener("click", () => {
+              const usuario = document.getElementById("usuario").value;
+              const contrasenia = document.getElementById("contrasenia").value;
+
+              fetch("autentificar.php", {
+                method: "POST",
+                body: `usuario=${usuario}&contrasenia=${contrasenia}`,
+                headers: {
+                  "Content-Type": "application/x-www-form-urlencoded",
+                },
+              })
+                .then((response) => response.text())
+                .then((result) => {
+                  document.getElementById("resultDiv").innerHTML = result;
+                });
+            });
+          });
+      });
+    </script>
+  </body>
+</html>
