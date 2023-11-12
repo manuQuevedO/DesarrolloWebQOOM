@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="menus" id="menu">
+      <a class="a" href="javascript:pregunta1()" id="boton1">1</a>
+
+      <button class="aboton" onclick="pregunta2()">2</button>
+
+      <a class="a" href="javascript:cargarContenido('login.php')" id="boton3"
+        >3</a
+      >
+      <button
+        onclick="document.getElementById('titulo').textContent = 'Pregunta 4 listar';"
+      >
+        <a class="a" href="javascript:cargarContenido('listar.php')">4</a>
+      </button>
+
+      <div>
+        <button
+          onclick="document.getElementById('Mensaje').textContent = 'Pregunta 5 datos';"
+        >
+          <a class="a" href="javascript:cargarContenido('datos.php')">5</a>
+        </button>
+      </div>
+    </div>
+
+    <script></script>
+  </body>
+</html>

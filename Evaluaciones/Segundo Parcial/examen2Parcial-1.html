@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="body">
+    <div class="container">
+      <div class="main">
+        <div id="principal"></div>
+        <div class="menu" id="menu"></div>
+      </div>
+      <div class="footer">
+        <button
+          onclick="document.getElementById('titulo').textContent = '';"
+          id="menucarga"
+          onclick="cargarmenu()"
+        >
+          <a class="menuboton" href="javascript:cargarmenu()">menu</a>
+        </button>
+        <div id="mensaje"></div>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
