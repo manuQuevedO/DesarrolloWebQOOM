@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    padding: 30px;
+}
+
+.container{
+    width: 900px;
+    border: 1px solid green;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.main{
+    width: 100%;
+    display: flex;
+    min-height: 300px;
+}
+
+#contenido{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-left: 1px solid green;
+    width: 80%;
+}
+
+.menu{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    align-items: center;
+    gap: 10px;
+    margin-left: 1px solid green;
+}
+
+a{
+    width: 50px;
+    height: 50px;
+    color: black;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    margin-left: 35px;
+}
+
+.cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+
+a:hover{
+    background-color: green;
+}
+
+#mensaje{
+    width: 100%;
+    background-color: lightblue;
+    border: 2px solid blue;
+    padding: 10px;
+    text-align: center;
+}
+
+.calc_options{
+    display: flex;
+    border: 1px solid black;
+    padding: 10px;
+    gap: 5px;
+    align-items: center;
+}
+
+.calc_input{
+    width: 50px;
+    height: 30px;
+    padding: 5px;
+}
+
+.resultados{
+    margin-top: 10px;
+    width: 50%;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+table{
+    width: 100%;
+}
+
+#resultados{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    background-color: gray;
+    display: none;
+}
+
+.result{
+    width: 100%;
+    padding: 10px;
+    color: white;
+}

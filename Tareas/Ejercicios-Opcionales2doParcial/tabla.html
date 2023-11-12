@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #contenido {
+            padding: 15px;
+            align-items: baseline;
+            
+        
+        }
+        .op{
+            display: flex;
+            flex-direction: row;
+            gap: 5px;
+        }
+
+        .radio-container {
+            background-color: cornsilk;
+            display: flex;
+            flex-direction: row;
+            width: auto;
+            border: 2px solid black;
+        }
+
+        .radio-column {
+            padding-left: 15px;
+            flex: 1;
+        }
+
+        .input {
+            margin: 5px;
+        }
+
+        #resultado {
+            padding: 15px;
+            display: block;
+        }
+    </style>
+    </style>
+</head>
+
+<body>
+
+   <div class="op">
+     <label for="number">Tabla del:</label>
+     <input type="number" id="numero1" class="input" placeholder="número (menor a 10)">
+     <div class="radio-container">
+         <div class="radio-column">
+             <input type="radio" name="operacion" value="suma" checked> Suma
+             <br>
+             <input type="radio" name="operacion" value="resta"> Resta
+         </div>
+         <div class="radio-column">
+             <input type="radio" name="operacion" value="multiplicacion"> Multiplicación
+             <input type="radio" name="operacion" value="division"> División
+         </div>
+     </div>
+     <label for="number">Hasta el:</label>
+     <input type="number" id="numero2" class="input" placeholder="número(mayor a 1)">
+     <button onclick="generarTabla()">Tabla</button>
+   </div>
+
+    <br>
+
+    <div id="resultado"></div>
+
+</body>
+<script src="jscript.js"></script>
+
+</html>
