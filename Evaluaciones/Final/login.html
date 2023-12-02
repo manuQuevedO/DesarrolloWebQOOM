@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <body onload="generarNumeros()">
+        <form action="autenticar.php" method="post">
+            <label for="usuario">usuario:</label><br>
+            <input type="text" id="usuario" name="usuario"><br>
+            <label for="contrasena">Contraseña:</label><br>
+            <input type="password" id="password" name="password" readonly><br><br>
+            <div id="numpad"></div><br>
+            <input type="submit" value="Ingresar">
+        </form>    
+</body>
+</html>
